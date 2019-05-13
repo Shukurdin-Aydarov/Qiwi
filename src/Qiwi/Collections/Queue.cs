@@ -41,7 +41,9 @@ namespace Qiwi.Collections
         }
 
         public int Count => size;
-               
+
+        public bool IsEmpty => size == 0;
+        
         public void Enqueue(T item)
         {
             if (size == array.Length)
